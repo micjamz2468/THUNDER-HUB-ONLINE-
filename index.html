@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Thunder Hub - Quality products. Shop smart and contact us on WhatsApp.">
+
+<meta property="og:title"
+content="Thunder Hub | Shop Smart">
+
+<meta property="og:description"
+content="Browse Thunder Hub products and contact us on WhatsApp.">
+
+<meta property="og:type"
+content="website">
+
+<title>THUNDER HUB | Shop Smart</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f5f5;
+    color:#171717;
+}
+
+/* HEADER */
+
+header{
+    background:#0b0b0b;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:2px solid #d4af37;
+}
+
+.nav{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:25px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:white;
+    font-weight:400;
+}
+
+.whatsapp-top{
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:11px 15px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    linear-gradient(
+        rgba(0,0,0,.72),
+        rgba(0,0,0,.72)
+    ),
+    url("IMG-20260828-WA0011.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:85px 20px;
+}
+
+.hero-small{
+    color:#d4af37;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:4px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:clamp(38px,8vw,65px);
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#d4af37;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.7;
+    color:#ddd;
+    font-size:16px;
+}
+
+.hero-button{
+    display:inline-block;
+    margin-top:25px;
+    background:#d4af37;
+    color:#111;
+    padding:13px 22px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* MAIN */
+
+.container{
+    width:94%;
+    max-width:1200px;
+    margin:45px auto 70px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section-title h2{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.section-title h2 span{
+    color:#d4af37;
+}
+
+.section-title p{
+    color:#777;
+    font-size:14px;
+}
+
+/* SEARCH */
+
+.search{
+    width:100%;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    background:white;
+    font-size:15px;
+    margin-bottom:25px;
+}
+
+.search:focus{
+    border-color:#d4af37;
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:22px;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid #e5e5e5;
+    box-shadow:0 4px 15px rgba(0,0,0,.07);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.13);
+}
+
+/* IMAGE */
+
+.product-image{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    background:#eee;
+}
+
+/* CARD BODY */
+
+.card-body{
+    padding:17px;
+}
+
+.card-body h3{
+    font-size:19px;
+    margin-bottom:8px;
+}
+
+.card-body p{
+    color:#777;
+    font-size:13px;
+    line-height:1.6;
+    min-height:42px;
+    margin-bottom:16px;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+}
+
+.btn{
+    border:0;
+    border-radius:8px;
+    padding:12px 7px;
+    text-align:center;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.whatsapp{
+    background:#25D366;
+    color:white;
+}
+
+.share{
+    background:#111;
+    color:#d4af37;
+}
+
+/* WHY US */
+
+.why{
+    background:#111;
+    color:white;
+    padding:55px 20px;
+}
+
+.why-inner{
+    max-width:1100px;
+    margin:auto;
+}
+
+.why-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.why-title h2{
+    color:#d4af37;
+    font-size:30px;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.why-box{
+    text-align:center;
+    padding:25px 15px;
+    border:1px solid #333;
+    border-radius:12px;
+}
+
+.why-box .icon{
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.why-box h3{
+    color:#d4af37;
+    margin-bottom:8px;
+}
+
+.why-box p{
+    color:#aaa;
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+    background:#050505;
+    color:#aaa;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.footer-logo{
+    color:#d4af37;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+footer p{
+    font-size:13px;
+    line-height:1.8;
+}
+
+footer a{
+    color:#25D366;
+    text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .nav{
+        padding:13px 14px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .whatsapp-top{
+        padding:9px 10px;
+        font-size:11px;
+    }
+
+    .hero{
+        padding:65px 18px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .container{
+        width:92%;
+        margin-top:35px;
+    }
+
+    .products{
+        grid-template-columns:
+        repeat(2,1fr);
+
+        gap:12px;
+    }
+
+    .product-image{
+        height:180px;
+    }
+
+    .card-body{
+        padding:12px;
+    }
+
+    .card-body h3{
+        font-size:16px;
+    }
+
+    .card-body p{
+        font-size:12px;
+    }
+
+    .buttons{
+        grid-template-columns:1fr;
+    }
+
+    .btn{
+        font-size:12px;
+        padding:10px 5px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="nav">
+
+<div class="logo">
+THUNDER <span>HUB</span>
+</div>
+
+<a
+class="whatsapp-top"
+href="https://wa.me/2348032744506"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-small">
+WELCOME TO
+</div>
+
+<h1>
+THUNDER <span>HUB</span>
+</h1>
+
+<p>
+Shop quality products from Thunder Hub.
+Browse our products and contact us directly on WhatsApp for price,
+availability and more information.
+</p>
+
+<a
+href="#products"
+class="hero-button">
+
+VIEW PRODUCTS
+
+</a>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<main class="container" id="products">
+
+<div class="section-title">
+
+<h2>
+OUR <span>PRODUCTS</span>
+</h2>
+
+<p>
+Browse our available products below.
+</p>
+
+</div>
+
+
+<input
+type="text"
+id="search"
+class="search"
+placeholder="🔍 Search products..."
+onkeyup="searchProducts()">
+
+
+<div class="products" id="productGrid">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0011.jpg"
+alt="Thunder Hub Product 1">
+
+<div class="card-body">
+
+<h3>Product 1</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%201."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 1','IMG-20260828-WA0011.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 2 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0012.jpg"
+alt="Thunder Hub Product 2">
+
+<div class="card-body">
+
+<h3>Product 2</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%202."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 2','IMG-20260828-WA0012.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 3 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0013.jpg"
+alt="Thunder Hub Product 3">
+
+<div class="card-body">
+
+<h3>Product 3</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%203."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 3','IMG-20260828-WA0013.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 4 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0014.jpg"
+alt="Thunder Hub Product 4">
+
+<div class="card-body">
+
+<h3>Product 4</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%204."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 4','IMG-20260828-WA0014.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 5 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0015.jpg"
+alt="Thunder Hub Product 5">
+
+<div class="card-body">
+
+<h3>Product 5</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%205."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 5','IMG-20260828-WA0015.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 6 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0016.jpg"
+alt="Thunder Hub Product 6">
+
+<div class="card-body">
+
+<h3>Product 6</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%206."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 6','IMG-20260828-WA0016.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 7 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0017.jpg"
+alt="Thunder Hub Product 7">
+
+<div class="card-body">
+
+<h3>Product 7</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%207."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 7','IMG-20260828-WA0017.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 8 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0018.jpg"
+alt="Thunder Hub Product 8">
+
+<div class="card-body">
+
+<h3>Product 8</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%208."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 8','IMG-20260828-WA0018.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 9 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0019.jpg"
+alt="Thunder Hub Product 9">
+
+<div class="card-body">
+
+<h3>Product 9</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%209."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 9','IMG-20260828-WA0019.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 10 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0020.jpg"
+alt="Thunder Hub Product 10">
+
+<div class="card-body">
+
+<h3>Product 10</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%2010."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 10','IMG-20260828-WA0020.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PRODUCT 11 -->
+
+<div class="card product">
+
+<img
+class="product-image"
+src="IMG-20260828-WA0021.jpg"
+alt="Thunder Hub Product 11">
+
+<div class="card-body">
+
+<h3>Product 11</h3>
+
+<p>
+Quality product from Thunder Hub.
+Contact us for price and availability.
+</p>
+
+<div class="buttons">
+
+<a
+class="btn whatsapp"
+href="https://wa.me/2348032744506?text=Hello%20Thunder%20Hub,%20I%20want%20information%20about%20Product%2011."
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+<button
+class="btn share"
+onclick="shareProduct('Product 11','IMG-20260828-WA0021.jpg')">
+
+🔗 Share
+
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+</main>
+
+
+<!-- WHY THUNDER HUB -->
+
+<section class="why">
+
+<div class="why-inner">
+
+<div class="why-title">
+
+<h2>Why Thunder Hub?</h2>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-box">
+
+<div class="icon">⭐</div>
+
+<h3>Quality</h3>
+
+<p>
+We showcase quality products for our customers.
+</p>
+
+</div>
+
+<div class="why-box">
+
+<div class="icon">💬</div>
+
+<h3>Easy Contact</h3>
+
+<p>
+Chat directly with us on WhatsApp for enquiries.
+</p>
+
+</div>
+
+<div class="why-box">
+
+<div class="icon">🛍️</div>
+
+<h3>Shop Smart</h3>
+
+<p>
+Browse our products conveniently from your phone.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-logo">
+THUNDER HUB
+</div>
+
+<p>
+Shop Smart. Shop Thunder.
+</p>
+
+<p>
+WhatsApp:
+<a
+href="https://wa.me/2348032744506"
+target="_blank">
+
+08032744506
+
+</a>
+</p>
+
+<p>
+© 2026 Thunder Hub. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<script>
+
+/* SEARCH */
+
+function searchProducts(){
+
+    let input =
+    document
+    .getElementById("search")
+    .value
+    .toLowerCase();
+
+    let products =
+    document
+    .querySelectorAll(".product");
+
+    products.forEach(function(product){
+
+        let text =
+        product
+        .innerText
+        .toLowerCase();
+
+        if(text.includes(input)){
+            product.style.display="";
+        }else{
+            product.style.display="none";
+        }
+
+    });
+
+}
+
+
+/* SHARE */
+
+function shareProduct(name,image){
+
+    const productURL =
+    window.location.origin +
+    window.location.pathname +
+    "?product=" +
+    encodeURIComponent(name);
+
+    const message =
+    "Check out " +
+    name +
+    " on Thunder Hub:\n\n" +
+    productURL;
+
+    if(navigator.share){
+
+        navigator.share({
+
+            title:name + " | Thunder Hub",
+
+            text:
+            "Check out " +
+            name +
+            " on Thunder Hub.",
+
+            url:productURL
+
+        }).catch(function(){});
+
+    }else{
+
+        navigator.clipboard
+        .writeText(message)
+        .then(function(){
+
+            alert(
+            "Product link copied. You can paste it into WhatsApp."
+            );
+
+        })
+        .catch(function(){
+
+            alert(message);
+
+        });
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
